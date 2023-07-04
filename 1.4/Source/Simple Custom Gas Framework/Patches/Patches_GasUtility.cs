@@ -36,6 +36,8 @@ namespace SCGF
                 return;
             }
 
+            float toxicFactor = 0f;
+
             for (int i = 0; i < GasLibrary.numCustomGasses; i++)
             {
                 GasDef gasDef = GasLibrary.customGassesArray[i];
@@ -50,16 +52,16 @@ namespace SCGF
                     continue;
                 }
 
-                float num = (float)(int)gasDensity / 255f;
+                toxicFactor += (float)(int)gasDensity / 255f;
 
+            }
                 Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ToxicBuildup);
                 if (firstHediffOfDef != null && firstHediffOfDef.CurStageIndex == firstHediffOfDef.def.stages.Count - 1)
                 {
-                    num *= 0.25f;
+                    toxicFactor *= 0.25f;
                 }
 
-                GameCondition_ToxicFallout.DoPawnToxicDamage(pawn, protectedByRoof: false, num);
-            }
+                GameCondition_ToxicFallout.DoPawnToxicDamage(pawn, protectedByRoof: false, toxicFactor);
         }
 
         /// <summary>
