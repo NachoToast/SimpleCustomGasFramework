@@ -5,18 +5,18 @@
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<packageId>NachoToast.SCGF_testing_10</packageId>
+	<packageId>NachoToast.SCGF.Testing10</packageId>
 	<loadAfter>
-        <li>NachoToast.scgf</li>
+        <li>NachoToast.SCGF</li>
 	</loadAfter>
     <modDependencies>
         <li>
-            <packageId>nachotoast.scgf</packageId>
+            <packageId>NachoToast.SCGF</packageId>
             <displayName>Simple Custom Gas Framework</displayName>
 			<downloadUrl>https://github.com/NachoToast/SimpleCustomGasFramework/releases/latest</downloadUrl>
         </li>
     </modDependencies>
 	<incompatibleWith>
-		<li>nachotoast.scgf_testing_1</li>
+		<li>NachoToast.SCGF.Testing1</li>
 	</incompatibleWith>
 </ModMetaData>
