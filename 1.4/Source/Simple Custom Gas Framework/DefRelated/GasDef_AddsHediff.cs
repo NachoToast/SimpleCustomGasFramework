@@ -10,16 +10,10 @@ namespace SCGF
     {
         public HediffDef hediff;
 
-        // hediff severity increase is calculated by this value * gas density %
-        // e.g. a value of 0.05f (default) means the severity of the hediff increases by 0.05 every second at 100% density, 0.025 at 50% density, etc...
         public float severityGasDensityFactor = 0.05f;
 
-        // on top of the severityGasDensityFactor (see above), hediff severity increase also takes this stat into account
-        // e.g. if its value is 75% for a pawn, their severity increase will only be 25% of what you would expect
         public StatDef exposureStatFactor = null;
 
-        // if a pawns severity for this hediff is at its final stage, further severity increases get multiplied by this amount
-        // in vanilla, Tox Gas uses this with a value of 0.25 (default)
         public float finalStageMultiplier = 0.25f;
 
         public float GetSeverityAdjustment(Pawn pawn, byte gasDensity)
