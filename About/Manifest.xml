@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Manifest>
     <identifier>net.nachotoast.rimworld.mod.scgf</identifier>
-    <version>0.9.1</version>
+    <version>1.0.0</version>
     <manifestUri>https://raw.githubusercontent.com/NachoToast/SimpleCustomGasFramework/main/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/NachoToast/SimpleCustomGasFramework/releases/latest</downloadUri>
 </Manifest>
