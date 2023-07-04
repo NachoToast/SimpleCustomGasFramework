@@ -110,7 +110,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// Since calculating the colour of a tile requires knowledge of all the gasses present - both vanilla and custom,
+        /// Since calculating the colour of a cell requires knowledge of all the gasses present - both vanilla and custom,
         /// only call the child method, since the parent doesn't account for custom gasses.
         /// </summary>
         public static bool ColorAt_Prefix(ExtendedGasGrid __instance, IntVec3 cell, ref Color __result, ref FloatRange ___AlphaRange, ref Color ___SmokeColor, ref Color ___ToxColor, ref Color ___RotColor)

@@ -131,7 +131,7 @@ namespace SCGF
             }
 
             // alpha calculations
-            // 3 gasses (255 * 3) on a single tile gives the max alpha value
+            // 3 gasses (255 * 3) on a single cell gives the max alpha value
             result.a = AlphaRange.LerpThroughRange(densitySum / 765f);
 
             return result;
@@ -139,7 +139,7 @@ namespace SCGF
 
         public new void Notify_ThingSpawned(Thing thing)
         {
-            // the parent method for this is used to remove custom gasses when 'full' things are spawned on their tiles (e.g. walls)
+            // the parent method for this is used to remove custom gasses when 'full' things are spawned on their cells (e.g. walls)
             if (!thing.Spawned || thing.def.Fillage != FillCategory.Full)
             {
                 return;
@@ -177,7 +177,7 @@ namespace SCGF
 
         private void Overflow(IntVec3 cell, GasDef gasDef, int amount)
         {
-            // the parent method for this is used to add gasses to surrounding tiles when spawning them in (NOT for diffusion)
+            // the parent method for this is used to add gasses to surrounding cells when spawning them in (NOT for diffusion)
             if (amount <= 0)
             {
                 return;
