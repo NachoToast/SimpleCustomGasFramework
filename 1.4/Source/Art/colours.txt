@@ -1,0 +1,6 @@
+preview.png:
+	Bottom right background colour is RimWorld's WindowBGFillColor	 			rgb(21, 25, 29)					// Widgets.cs 308
+	Top left background colour is RimWorld's OptionUnselectedBGFillColor		rgb(0.21, 0.21, 0.21)			// Widgets.cs 313
+	Font is the RimWorld fan made font, made by Marnador in 2015				RimWorldFont.ttf				// https://ludeon.com/forums/index.php?topic=11022.0
+	Gold colouring is the Gold colour from RimWorld's ColourLibrary				#dbb40c							// ColorLibrary.cs 81
+	Gas smoke image is RimWorld's AirPuff texture								Things\Mote\AirPuff.psd			// https://ludeon.com/forums/index.php?topic=2325.0
