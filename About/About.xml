@@ -2,17 +2,17 @@
 <ModMetaData>
 	<name>Simple Custom Gas Framework</name>
 	<author>NachoToast</author>
+	<packageId>NachoToast.SCGF</packageId>
+	<url>https://github.com/NachoToast/SimpleCustomGasFramework</url>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<packageId>NachoToast.SCGF</packageId>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 	</loadAfter>
-	<description>A framework for creating custom gas types.</description>
     <modDependencies>
         <li>
             <packageId>brrainz.harmony</packageId>
@@ -21,4 +21,5 @@
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
     </modDependencies>
+	<description>A framework for creating custom gas types.</description>
 </ModMetaData>

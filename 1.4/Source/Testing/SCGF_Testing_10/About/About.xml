@@ -2,10 +2,11 @@
 <ModMetaData>
 	<name>SCGF Testing Gas 10</name>
 	<author>NachoToast</author>
+	<packageId>NachoToast.SCGF.Testing10</packageId>
+	<url>https://github.com/NachoToast/SimpleCustomGasFramework/tree/main/1.4/Source/Testing/SCGF_Testing_10</url>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<packageId>NachoToast.SCGF.Testing10</packageId>
 	<loadAfter>
         <li>NachoToast.SCGF</li>
 	</loadAfter>
