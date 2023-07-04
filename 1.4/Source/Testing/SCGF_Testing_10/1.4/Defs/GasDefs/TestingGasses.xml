@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_1</defName>
+        <label>test gas 1</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_2</defName>
+        <label>test gas 2</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_3</defName>
+        <label>test gas 3</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_4</defName>
+        <label>test gas 4</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_5</defName>
+        <label>test gas 5</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_6</defName>
+        <label>test gas 6</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_7</defName>
+        <label>test gas 7</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_8</defName>
+        <label>test gas 8</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_9</defName>
+        <label>test gas 9</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_10</defName>
+        <label>test gas 10</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+</Defs>

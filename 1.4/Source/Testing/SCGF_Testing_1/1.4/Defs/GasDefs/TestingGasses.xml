@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <Def Class="SCGF.GasDef">
+        <defName>TestGas_1</defName>
+        <label>test gas 1</label>
+        <color>(255, 255, 255)</color>
+        <isToxic>true</isToxic>
+        <targetMechs>true</targetMechs>
+        <addsHediffs>
+            <li>
+                <hediff>Anesthetic</hediff>
+                <exposureStatFactor>ToxicEnvironmentResistance</exposureStatFactor>
+            </li>
+        </addsHediffs>
+        <immunities>
+            <pawnKinds>
+                <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage_Player</li>
+            </pawnKinds>
+            <apparel>
+                <li>Apparel_CowboyHat</li>
+            </apparel>
+            <hediffs>
+                <li>BionicArm</li>
+            </hediffs>
+            <genes>
+                <li>Hair_SnowWhite</li>
+            </genes>
+            <traits>
+                <li>Bloodlust</li>
+            </traits>
+        </immunities>
+    </Def>
+
+</Defs>
