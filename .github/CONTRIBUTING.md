@@ -12,3 +12,11 @@ For more information, see the [RimWorld modding tutorials](https://rimworldwiki.
 - `UnityEngine.CoreModule.dll` - Unity's core assembly.
 - `0Harmony.dll` - Harmony library for patching code.
 - `UnityEngine.IMGUIModule.dll` - For patching the UI inspector so we can display custom gases.
+
+### Gases vs Gasses
+
+If you look through the code, you'll find that "gasses" is used in the code, while "gases" is used in the comments, wiki, and other documentation.
+
+Although both "gasses" and "gases" are literally correct - referring to the plural form of gas, "gases" is more acceptable as a noun, while "gasses" is the present tense form of the verb.
+
+So why not just use "gases" everywhere? Because RimWorld uses "gasses" in its code, so "gasses" is used in this framework to keep things consistent.
