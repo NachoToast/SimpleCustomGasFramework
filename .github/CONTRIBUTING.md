@@ -11,4 +11,4 @@ For more information, see the [RimWorld modding tutorials](https://rimworldwiki.
 - `Assembly-CSharp.dll` - RimWorld's main assembly.
 - `UnityEngine.CoreModule.dll` - Unity's core assembly.
 - `0Harmony.dll` - Harmony library for patching code.
-- `UnityEngine.IMGUIModule.dll` - For patching the UI inspector so we can display custom gasses.
+- `UnityEngine.IMGUIModule.dll` - For patching the UI inspector so we can display custom gases.

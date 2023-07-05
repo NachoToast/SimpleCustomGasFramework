@@ -37,8 +37,8 @@ namespace SCGF
         /// <summary>
         /// When a map is being loaded from a save, we want to ensure its gas grid is the modded gas grid.
         /// 
-        /// We also want to make sure that it can handle the current number of custom gasses, since its possible that the user has
-        /// added or removed gasses.
+        /// We also want to make sure that it can handle the current number of custom gases, since its possible that the user has
+        /// added or removed gases.
         /// </summary>
         public static void ExposeComponents_Postfix(Map __instance)
         {

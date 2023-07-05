@@ -3,7 +3,7 @@
 namespace SCGF
 {
     /// <summary>
-    /// This is the default gas worker that gasses use to decide whether their effects should be applied to a specific pawn,
+    /// This is the default gas worker that gases use to decide whether their effects should be applied to a specific pawn,
     /// and then applying those effects.
     /// </summary>
     public class GasWorker

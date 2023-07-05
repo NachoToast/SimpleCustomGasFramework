@@ -8,7 +8,7 @@ namespace SCGF
 {
     /// <summary>
     /// Miscellaneous patches (I can't believe I spelt that right first try), such as handling gas spawns from explosions, adding
-    /// custom gasses to the UI inspector (bottom left text), and listing custom gasses in the debug menu.
+    /// custom gases to the UI inspector (bottom left text), and listing custom gases in the debug menu.
     /// </summary>
     public class Patches_Misc
     {
@@ -70,7 +70,7 @@ namespace SCGF
         /// <summary>
         /// The base 'DrawGas' method is used to add the inspector labels of each gas and its density to the bottom left of the screen.
         /// The method that calls DrawGas - MouseoverReadout.MouseoverReadoutOnGUI, is hard-coded to only draw the 3 vanilla gas types, so
-        /// this detects the last call to DrawGas (which just happens to be drawing rot strink) and adds our own gasses to the widget.
+        /// this detects the last call to DrawGas (which just happens to be drawing rot strink) and adds our own gases to the widget.
         /// </summary>
         public static void DrawGas_Postfix(GasType gasType, ref float curYOffset, Vector2 ___BotLeft)
         {
@@ -100,7 +100,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// For ease of testing and developing, custom gasses should be added to the 'Add Gas' debug menu list.
+        /// For ease of testing and developing, custom gases should be added to the 'Add Gas' debug menu list.
         /// </summary>
         public static void PushGas_Postfix(ref List<DebugActionNode> __result)
         {

@@ -6,7 +6,7 @@ using Verse;
 namespace SCGF
 {
     /// <summary>
-    /// Patches to the vanilla GasUtility class to add functionality to custom gasses, like applying hediffs and toxic buildup.
+    /// Patches to the vanilla GasUtility class to add functionality to custom gases, like applying hediffs and toxic buildup.
     /// </summary>
     public static class Patches_GasUtility
     {
@@ -27,7 +27,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// Gasses with the 'isToxic' property should give pawns toxic buildup hediff just like how tox gas does.
+        /// Gases with the 'isToxic' property should give pawns toxic buildup hediff just like how tox gas does.
         /// </summary>
         public static void PawnGasEffectsTick_Postfix_Toxic(Pawn pawn)
         {

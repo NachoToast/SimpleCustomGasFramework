@@ -5,7 +5,7 @@ using Verse;
 namespace SCGF
 {
     /// <summary>
-    /// Keeps track of all custom gasses so they can be referenced throughout the framework when needed.
+    /// Keeps track of all custom gases so they can be referenced throughout the framework when needed.
     /// </summary>
     public static class GasLibrary
     {
@@ -37,7 +37,7 @@ namespace SCGF
 
             if (numCustomGasses == 0)
             {
-                Log.Warning("[Simple Custom Gas Framework] No custom gasses found");
+                Log.Warning("[Simple Custom Gas Framework] No custom gases found");
             }
             else if (numCustomGasses == 1)
             {
@@ -45,7 +45,7 @@ namespace SCGF
             }
             else
             {
-                Log.Message(String.Format("[Simple Custom Gas Framework] {0} Custom gasses loaded", numCustomGasses));
+                Log.Message(String.Format("[Simple Custom Gas Framework] {0} Custom gases loaded", numCustomGasses));
             }
 
         }

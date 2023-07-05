@@ -54,7 +54,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// After checking for vanilla gasses, also check for custom ones if there were none found.
+        /// After checking for vanilla gases, also check for custom ones if there were none found.
         /// </summary>
         public static void RecalculateEverHadGas_Postfix(ExtendedGasGrid __instance, ref bool ___anyGasEverAdded)
         {
@@ -65,7 +65,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// After checking for vanilla gasses at the cell, also check for custom ones if there were none found.
+        /// After checking for vanilla gases at the cell, also check for custom ones if there were none found.
         /// </summary>
         public static void AnyGasAt_Postfix(ExtendedGasGrid __instance, int idx, ref bool __result)
         {
@@ -110,8 +110,8 @@ namespace SCGF
         }
 
         /// <summary>
-        /// Since calculating the colour of a cell requires knowledge of all the gasses present - both vanilla and custom,
-        /// only call the child method, since the parent doesn't account for custom gasses.
+        /// Since calculating the colour of a cell requires knowledge of all the gases present - both vanilla and custom,
+        /// only call the child method, since the parent doesn't account for custom gases.
         /// </summary>
         public static bool ColorAt_Prefix(ExtendedGasGrid __instance, IntVec3 cell, ref Color __result, ref FloatRange ___AlphaRange, ref Color ___SmokeColor, ref Color ___ToxColor, ref Color ___RotColor)
         {
@@ -123,7 +123,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// A thing spawning should affect custom gasses as well as vanilla ones.
+        /// A thing spawning should affect custom gases as well as vanilla ones.
         /// </summary>
         public static void Notify_ThingSpawned_Postfix(ExtendedGasGrid __instance, Thing thing)
         {
@@ -131,7 +131,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// A call to dissipate vanilla gasses should also try to dissipate custom gasses.
+        /// A call to dissipate vanilla gases should also try to dissipate custom gases.
         /// </summary>
         public static void TryDissipateGasses_Postfix(ExtendedGasGrid __instance, int index)
         {
@@ -139,7 +139,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// A call to equalize vanilla gasses should also try to equalize custom gasses.
+        /// A call to equalize vanilla gases should also try to equalize custom gases.
         /// </summary>
         public static void EqualizeGasThroughBuilding_Postfix(ExtendedGasGrid __instance, Building b, bool twoWay)
         {
@@ -147,7 +147,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// A call to diffuse vanilla gasses should also try to diffuse custom gasses.
+        /// A call to diffuse vanilla gases should also try to diffuse custom gases.
         /// </summary>
         public static void TryDiffuseGasses_Postfix(ExtendedGasGrid __instance, IntVec3 cell, List<IntVec3> ___cardinalDirections)
         {
@@ -155,7 +155,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// The debug 'Fill All Gas' option should also fill cells with custom gasses instead of just the vanilla ones.
+        /// The debug 'Fill All Gas' option should also fill cells with custom gases instead of just the vanilla ones.
         /// </summary>
         public static void Debug_FillAll_Postfix(ExtendedGasGrid __instance)
         {
@@ -163,7 +163,7 @@ namespace SCGF
         }
 
         /// <summary>
-        /// The debug 'Clear All Gas' option should also clear custom gasses instead of just the vanilla ones.
+        /// The debug 'Clear All Gas' option should also clear custom gases instead of just the vanilla ones.
         /// </summary>
         public static void Debug_ClearAll_Postfix(ExtendedGasGrid __instance)
         {

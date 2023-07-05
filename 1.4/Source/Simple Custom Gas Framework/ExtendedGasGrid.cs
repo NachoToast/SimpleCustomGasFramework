@@ -7,7 +7,7 @@ namespace SCGF
 {
     /// <summary>
     /// The primary logic of this entire framework.
-    /// This class tries to copy what the vanilla gas grid does, but with added capability for any number of gasses.
+    /// This class tries to copy what the vanilla gas grid does, but with added capability for any number of gases.
     /// </summary>
     public class ExtendedGasGrid : GasGrid
     {
@@ -131,7 +131,7 @@ namespace SCGF
             }
 
             // alpha calculations
-            // 3 gasses (255 * 3) on a single cell gives the max alpha value
+            // 3 gases (255 * 3) on a single cell gives the max alpha value
             result.a = AlphaRange.LerpThroughRange(densitySum / 765f);
 
             return result;
@@ -139,7 +139,7 @@ namespace SCGF
 
         public new void Notify_ThingSpawned(Thing thing)
         {
-            // the parent method for this is used to remove custom gasses when 'full' things are spawned on their cells (e.g. walls)
+            // the parent method for this is used to remove custom gases when 'full' things are spawned on their cells (e.g. walls)
             if (!thing.Spawned || thing.def.Fillage != FillCategory.Full)
             {
                 return;
@@ -177,7 +177,7 @@ namespace SCGF
 
         private void Overflow(IntVec3 cell, GasDef gasDef, int amount)
         {
-            // the parent method for this is used to add gasses to surrounding cells when spawning them in (NOT for diffusion)
+            // the parent method for this is used to add gases to surrounding cells when spawning them in (NOT for diffusion)
             if (amount <= 0)
             {
                 return;
