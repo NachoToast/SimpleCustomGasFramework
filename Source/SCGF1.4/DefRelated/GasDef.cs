@@ -34,6 +34,8 @@ namespace SCGF
 
         public float diffusionGainModifier = 1.0f;
 
+        public GasType? realGasType;
+
         public Type workerClass = typeof(GasWorker);
 
         [Unsaved(false)]

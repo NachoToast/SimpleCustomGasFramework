@@ -61,10 +61,20 @@ namespace SCGF
                 customGasToApply = __instance.instigator.def.GetModExtension<CustomGasExtension>().gasDef;
             }
 
-            if (customGasToApply != null)
+            if (customGasToApply == null)
+            {
+                return;
+            }
+
+            if (customGasToApply.realGasType != null)
+            {
+                __instance.postExplosionGasType = customGasToApply.realGasType;
+            }
+            else
             {
                 __instance.postExplosionGasType = (GasType)(GasLibrary.firstCustomGasIndex + customGasToApply.customIndex);
             }
+
         }
 
         /// <summary>

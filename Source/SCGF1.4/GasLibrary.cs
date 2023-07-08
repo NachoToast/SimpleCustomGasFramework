@@ -19,7 +19,8 @@ namespace SCGF
 
         public static void LoadCustomGasDefs()
         {
-            customGassesArray = DefDatabase<GasDef>.AllDefsListForReading.ToArray();
+
+            customGassesArray = DefDatabase<GasDef>.AllDefsListForReading.Where(gasDef => gasDef.realGasType == null).ToArray();
             numCustomGasses = customGassesArray.Length;
             anyToxicCustomGasses = false;
 
