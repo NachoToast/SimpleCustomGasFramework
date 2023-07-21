@@ -205,7 +205,40 @@ namespace SCGF
             }, GenRadial.NumCellsInRadius(40f), rememberParents: true);
         }
 
-        public void TryDissipateGasses(int cellIndex)
+        public void Tick(List<IntVec3> cardinalDirections, ref int cycleIndexDissipation, ref int cycleIndexDiffusion)
+        {
+            if (!CalculateGasEffects)
+            {
+                return;
+            }
+
+            int area = map.Area;
+            int num = Mathf.CeilToInt((float)area * (1f / 64f));
+            List<IntVec3> cellsInRandomOrder = map.cellsInRandomOrder.GetAll();
+
+            for (int i = 0; i < num; i++)
+            {
+                if (cycleIndexDissipation >= area)
+                {
+                    cycleIndexDissipation = 0;
+                }
+                TryDissipateGasses(CellIndicesUtility.CellToIndex(cellsInRandomOrder[cycleIndexDissipation], map.Size.x));
+                cycleIndexDissipation++;
+            }
+
+            num = Mathf.CeilToInt((float)area * (1f / 32f));
+            for (int j = 0; j < num; j++)
+            {
+                if (cycleIndexDiffusion >= area)
+                {
+                    cycleIndexDiffusion = 0;
+                }
+                TryDiffuseGasses(cellsInRandomOrder[cycleIndexDiffusion], cardinalDirections);
+                cycleIndexDiffusion++;
+            }
+        }
+
+        private void TryDissipateGasses(int cellIndex)
         {
             if (!AnyGasAt(cellIndex))
             {
@@ -241,7 +274,7 @@ namespace SCGF
             }
         }
 
-        public void TryDiffuseGasses(IntVec3 cell, List<IntVec3> cardinalDirections)
+        private void TryDiffuseGasses(IntVec3 cell, List<IntVec3> cardinalDirections)
         {
             int sourceCellIndex = CellIndicesUtility.CellToIndex(cell, map.Size.x);
 

@@ -34,14 +34,16 @@ namespace SCGF
             harmony.Patch(AccessTools.Method(gasGrid, nameof(GasGrid.Notify_ThingSpawned)),
                 postfix: new HarmonyMethod(patchType, nameof(Notify_ThingSpawned_Postfix)));
 
-            harmony.Patch(AccessTools.Method(gasGrid, "TryDissipateGasses"), // private method
-                postfix: new HarmonyMethod(patchType, nameof(TryDissipateGasses_Postfix)));
+            // harmony.Patch(AccessTools.Method(gasGrid, "TryDissipateGasses"), // private method
+                // postfix: new HarmonyMethod(patchType, nameof(TryDissipateGasses_Postfix)));
 
             harmony.Patch(AccessTools.Method(gasGrid, nameof(GasGrid.EqualizeGasThroughBuilding)),
                 postfix: new HarmonyMethod(patchType, nameof(EqualizeGasThroughBuilding_Postfix)));
 
-            harmony.Patch(AccessTools.Method(gasGrid, "TryDiffuseGasses"), // private method
-                postfix: new HarmonyMethod(patchType, nameof(TryDiffuseGasses_Postfix)));
+            //harmony.Patch(AccessTools.Method(gasGrid, "TryDiffuseGasses"), // private method
+            // postfix: new HarmonyMethod(patchType, nameof(TryDiffuseGasses_Postfix)));
+
+            harmony.Patch(AccessTools.Method(gasGrid, nameof(GasGrid.Tick)), postfix: new HarmonyMethod(patchType, nameof(Tick_Postfix)));
 
             harmony.Patch(AccessTools.Method(gasGrid, nameof(GasGrid.Debug_FillAll)),
                 postfix: new HarmonyMethod(patchType, nameof(Debug_FillAll_Postfix)));
@@ -130,13 +132,18 @@ namespace SCGF
             __instance.Notify_ThingSpawned(thing);
         }
 
+        public static void Tick_Postfix(ExtendedGasGrid __instance, List<IntVec3> ___cardinalDirections, ref int ___cycleIndexDissipation, ref int ___cycleIndexDiffusion)
+        {
+            __instance.Tick(___cardinalDirections, ref ___cycleIndexDissipation, ref ___cycleIndexDiffusion);
+        }
+
         /// <summary>
         /// A call to dissipate vanilla gases should also try to dissipate custom gases.
         /// </summary>
-        public static void TryDissipateGasses_Postfix(ExtendedGasGrid __instance, int index)
+        /*public static void TryDissipateGasses_Postfix(ExtendedGasGrid __instance, int index)
         {
             __instance.TryDissipateGasses(index);
-        }
+        }*/
 
         /// <summary>
         /// A call to equalize vanilla gases should also try to equalize custom gases.
@@ -149,10 +156,10 @@ namespace SCGF
         /// <summary>
         /// A call to diffuse vanilla gases should also try to diffuse custom gases.
         /// </summary>
-        public static void TryDiffuseGasses_Postfix(ExtendedGasGrid __instance, IntVec3 cell, List<IntVec3> ___cardinalDirections)
+        /*public static void TryDiffuseGasses_Postfix(ExtendedGasGrid __instance, IntVec3 cell, List<IntVec3> ___cardinalDirections)
         {
             __instance.TryDiffuseGasses(cell, ___cardinalDirections);
-        }
+        }*/
 
         /// <summary>
         /// The debug 'Fill All Gas' option should also fill cells with custom gases instead of just the vanilla ones.
