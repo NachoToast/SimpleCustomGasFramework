@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace SCGF
@@ -15,6 +17,8 @@ namespace SCGF
         public StatDef exposureStatFactor = null;
 
         public float finalStageMultiplier = 0.25f;
+
+        public List<BodyPartDef> partsToAffect = new List<BodyPartDef>();
 
         public float GetSeverityAdjustment(Pawn pawn, byte gasDensity)
         {
@@ -38,8 +42,29 @@ namespace SCGF
         public void ApplyHediffToPawn(Pawn pawn, byte gasDensity)
         {
             float severityAdjustment = GetSeverityAdjustment(pawn, gasDensity);
+            if (severityAdjustment == 0f) return;
 
-            HealthUtility.AdjustSeverity(pawn, hediff, severityAdjustment);
+            Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
+            if (firstHediffOfDef != null)
+            {
+                firstHediffOfDef.Severity += severityAdjustment;
+                return;
+            }
+
+            if (severityAdjustment < 0f) return; // only add a new hediff for positive severity adjustments
+
+            BodyPartRecord bodyPart = null;
+            if (partsToAffect.Count > 0)
+            {
+                IEnumerable<BodyPartRecord> potentialParts = pawn.health.hediffSet.GetNotMissingParts();
+                potentialParts = potentialParts.Where((BodyPartRecord p) => partsToAffect.Contains(p.def));
+                bodyPart = potentialParts.RandomElementByWeightWithFallback((BodyPartRecord x) => x.coverageAbs);
+            }
+
+            firstHediffOfDef = HediffMaker.MakeHediff(hediff, pawn, bodyPart);
+            firstHediffOfDef.Severity = severityAdjustment;
+            pawn.health.AddHediff(firstHediffOfDef);
+
         }
     }
 
