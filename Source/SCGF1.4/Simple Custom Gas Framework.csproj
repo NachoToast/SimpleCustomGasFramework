@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefRelated\ApparelImmunityPreset.cs" />
     <Compile Include="DefRelated\CustomGasExtension.cs" />
     <Compile Include="DefRelated\GasDef.cs" />
     <Compile Include="DefRelated\GasDefOf.cs" />

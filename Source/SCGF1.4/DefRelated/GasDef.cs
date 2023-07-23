@@ -26,6 +26,8 @@ namespace SCGF
 
         public bool targetMechs = false;
 
+        public bool targetInsects = true;
+
         public List<GasDef_AddsHediff> addsHediffs = null;
 
         public GasDef_Immunities immunities = null;
@@ -52,6 +54,7 @@ namespace SCGF
                 {
                     workerInt = (GasWorker)Activator.CreateInstance(workerClass);
                     workerInt.gasDef = this;
+                    workerInt.Initialize();
                 }
 
                 return workerInt;
