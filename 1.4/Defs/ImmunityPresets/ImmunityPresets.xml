@@ -17,6 +17,7 @@
     <Def Class="SCGF.ApparelImmunityPreset">
         <defName>MouthCoveringThick</defName>
         <alsoIncludes>FaceCoveringThick</alsoIncludes>
+        <apparel />
     </Def>
 
     <!-- face covering -->
@@ -25,6 +26,7 @@
     <Def Class="SCGF.ApparelImmunityPreset">
         <defName>FaceCoveringThin</defName>
         <alsoIncludes>HeadCoveringThin</alsoIncludes>
+        <apparel />
     </Def>
 
     <!-- gas masks -->
@@ -42,6 +44,7 @@
     <Def Class="SCGF.ApparelImmunityPreset">
         <defName>HeadCoveringThin</defName>
         <!-- notably we don't put balaclavas or hoods here since they don't cover the entire head -->
+        <apparel />
     </Def>
 
     <!-- hazmat masks -->
