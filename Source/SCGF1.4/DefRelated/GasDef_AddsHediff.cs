@@ -44,26 +44,34 @@ namespace SCGF
             float severityAdjustment = GetSeverityAdjustment(pawn, gasDensity);
             if (severityAdjustment == 0f) return;
 
-            Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
-            if (firstHediffOfDef != null)
+            BodyPartRecord bodyPart = null;
+            Hediff existingHediff = null;
+
+            if (partsToAffect.Count > 0)
             {
-                firstHediffOfDef.Severity += severityAdjustment;
+                // choose a random part to effect
+                IEnumerable<BodyPartRecord> potentialParts = pawn.health.hediffSet.GetNotMissingParts();
+                potentialParts = potentialParts.Where((BodyPartRecord p) => partsToAffect.Contains(p.def));
+                bodyPart = potentialParts.RandomElementByWeightWithFallback((BodyPartRecord x) => x.coverageAbs);
+
+                existingHediff = pawn.health.hediffSet.GetFirstHediffMatchingPart<Hediff>(bodyPart);
+            }
+            else
+            {
+                existingHediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
+            }
+
+            if (existingHediff != null)
+            {
+                existingHediff.Severity += severityAdjustment;
                 return;
             }
 
             if (severityAdjustment < 0f) return; // only add a new hediff for positive severity adjustments
 
-            BodyPartRecord bodyPart = null;
-            if (partsToAffect.Count > 0)
-            {
-                IEnumerable<BodyPartRecord> potentialParts = pawn.health.hediffSet.GetNotMissingParts();
-                potentialParts = potentialParts.Where((BodyPartRecord p) => partsToAffect.Contains(p.def));
-                bodyPart = potentialParts.RandomElementByWeightWithFallback((BodyPartRecord x) => x.coverageAbs);
-            }
-
-            firstHediffOfDef = HediffMaker.MakeHediff(hediff, pawn, bodyPart);
-            firstHediffOfDef.Severity = severityAdjustment;
-            pawn.health.AddHediff(firstHediffOfDef);
+            existingHediff = HediffMaker.MakeHediff(hediff, pawn);
+            existingHediff.Severity = severityAdjustment;
+            pawn.health.AddHediff(existingHediff, bodyPart);
 
         }
     }
