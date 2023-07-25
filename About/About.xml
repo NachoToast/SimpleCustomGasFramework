@@ -3,7 +3,7 @@
 	<name>Simple Custom Gas Framework</name>
 	<author>NachoToast</author>
 	<packageId>NachoToast.SCGF</packageId>
-	<modVersion>1.1.1</modVersion>
+	<modVersion>1.1.2</modVersion>
 	<url>https://github.com/NachoToast/SimpleCustomGasFramework</url>
 	<supportedVersions>
 		<li>1.4</li>

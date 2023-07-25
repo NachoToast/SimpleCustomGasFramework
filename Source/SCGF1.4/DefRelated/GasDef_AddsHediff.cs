@@ -54,7 +54,14 @@ namespace SCGF
                 potentialParts = potentialParts.Where((BodyPartRecord p) => partsToAffect.Contains(p.def));
                 bodyPart = potentialParts.RandomElementByWeightWithFallback((BodyPartRecord x) => x.coverageAbs);
 
-                existingHediff = pawn.health.hediffSet.GetFirstHediffMatchingPart<Hediff>(bodyPart);
+                foreach (Hediff pawnHediff in pawn.health.hediffSet.hediffs)
+                {
+                    if (pawnHediff.def == hediff && pawnHediff.Part == bodyPart)
+                    {
+                        existingHediff = pawnHediff;
+                        break;
+                    }
+                }
             }
             else
             {
