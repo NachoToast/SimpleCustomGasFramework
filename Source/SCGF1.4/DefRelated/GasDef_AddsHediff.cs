@@ -20,7 +20,7 @@ namespace SCGF
 
         public List<BodyPartDef> partsToAffect = new List<BodyPartDef>();
 
-        public float GetSeverityAdjustment(Pawn pawn, byte gasDensity)
+        public float GetSeverityAdjustment(Pawn pawn, byte gasDensity, Hediff existingHediff)
         {
             float adjustment = gasDensity / 255f * severityGasDensityFactor;
 
@@ -29,9 +29,7 @@ namespace SCGF
                 adjustment *= 1f - pawn.GetStatValue(exposureStatFactor);
             }
 
-            Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
-
-            if (firstHediffOfDef != null && firstHediffOfDef.CurStageIndex == firstHediffOfDef.def.stages.Count - 1)
+            if (existingHediff != null && existingHediff.CurStageIndex == existingHediff.def.stages.Count - 1)
             {
                 adjustment *= 0.25f;
             }
@@ -41,9 +39,6 @@ namespace SCGF
 
         public void ApplyHediffToPawn(Pawn pawn, byte gasDensity)
         {
-            float severityAdjustment = GetSeverityAdjustment(pawn, gasDensity);
-            if (severityAdjustment == 0f) return;
-
             BodyPartRecord bodyPart = null;
             Hediff existingHediff = null;
 
@@ -56,7 +51,7 @@ namespace SCGF
 
                 foreach (Hediff pawnHediff in pawn.health.hediffSet.hediffs)
                 {
-                    if (pawnHediff.def == hediff && pawnHediff.Part == bodyPart)
+                    if (pawnHediff.def == hediff && pawnHediff?.Part == bodyPart)
                     {
                         existingHediff = pawnHediff;
                         break;
@@ -67,6 +62,9 @@ namespace SCGF
             {
                 existingHediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediff);
             }
+
+            float severityAdjustment = GetSeverityAdjustment(pawn, gasDensity, existingHediff);
+            if (severityAdjustment == 0f) return;
 
             if (existingHediff != null)
             {
