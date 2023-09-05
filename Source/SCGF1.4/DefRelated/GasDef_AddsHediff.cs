@@ -29,7 +29,7 @@ namespace SCGF
                 adjustment *= 1f - pawn.GetStatValue(exposureStatFactor);
             }
 
-            if (existingHediff != null && existingHediff.CurStageIndex == existingHediff.def.stages.Count - 1)
+            if (existingHediff?.CurStageIndex != null && existingHediff.CurStageIndex == existingHediff.def?.stages?.Count - 1)
             {
                 adjustment *= 0.25f;
             }
@@ -48,7 +48,7 @@ namespace SCGF
                 IEnumerable<BodyPartRecord> potentialParts = pawn.health.hediffSet.GetNotMissingParts();
                 potentialParts = potentialParts.Where((BodyPartRecord p) => partsToAffect.Contains(p.def));
                 bodyPart = potentialParts.RandomElementByWeightWithFallback((BodyPartRecord x) => x.coverageAbs);
-
+                
                 foreach (Hediff pawnHediff in pawn.health.hediffSet.hediffs)
                 {
                     if (pawnHediff.def == hediff && pawnHediff?.Part == bodyPart)
@@ -76,6 +76,13 @@ namespace SCGF
 
             existingHediff = HediffMaker.MakeHediff(hediff, pawn);
             existingHediff.Severity = severityAdjustment;
+
+            if (bodyPart == null && hediff.HasComp(typeof(HediffComp_Infecter)))
+            {
+                Log.Error($"[Simple Custom Gas Framework] Failed to find a body part on {pawn.Name} to apply {hediff.defName} to, infector-type hediffs (chemical burns, scratches, etc...) must also have a list of partsToAffect.");
+                return;
+            }
+
             pawn.health.AddHediff(existingHediff, bodyPart);
 
         }
