@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- mouth covering -->
+
+    <!-- face mask, veil, N95 mask, etc... -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>MouthCoveringThin</defName>
+        <alsoIncludes>FaceCoveringThin</alsoIncludes>
+        <apparel>
+            <li>Apparel_ClothMask</li>
+            <li>Apparel_WarVeil</li>
+        </apparel>
+    </Def>
+
+    <!-- non-coth based mouth covers, e.g. https://www.google.com/search?q=xupermask&tbm=isch -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>MouthCoveringThick</defName>
+        <alsoIncludes>FaceCoveringThick</alsoIncludes>
+        <apparel />
+    </Def>
+
+    <!-- face covering -->
+
+    <!-- no idea, just here for consistency -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>FaceCoveringThin</defName>
+        <alsoIncludes>HeadCoveringThin</alsoIncludes>
+        <apparel />
+    </Def>
+
+    <!-- gas masks -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>FaceCoveringThick</defName>
+        <alsoIncludes>HeadCoveringThick</alsoIncludes>
+        <apparel>
+            <li>Apparel_GasMask</li>
+        </apparel>
+    </Def>
+
+    <!-- head covering -->
+
+    <!-- no idea, just here for consistency -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>HeadCoveringThin</defName>
+        <!-- notably we don't put balaclavas or hoods here since they don't cover the entire head -->
+        <apparel />
+    </Def>
+
+    <!-- hazmat masks -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>HeadCoveringThick</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
+        </apparel>
+    </Def>
+
+    <!-- full-body covering (excluding head) -->
+
+    <!-- burkas -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>FullBodyCoveringThin</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Burka</li>
+        </apparel>
+    </Def>
+
+    <!-- hazmat suits -->
+    <Def Class="SCGF.ApparelImmunityPreset">
+        <defName>FullBodyCoveringThick</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphract</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPhoenix</li>
+        </apparel>
+    </Def>
+
+</Defs>
