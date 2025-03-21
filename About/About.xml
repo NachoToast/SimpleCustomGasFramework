@@ -39,6 +39,11 @@
 				<displayName>Performance Fish</displayName>
 				<downloadUrl>https://github.com/bbradson/performance-fish</downloadUrl>
 			</li>
+			<li>
+				<packageId>Ludeon.RimWorld.Biotech</packageId>
+				<displayName>Biotech</displayName>
+				<steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech</steamWorkshopUrl>
+			</li>
 		</v1.5>
 	</modDependenciesByVersion>
 
