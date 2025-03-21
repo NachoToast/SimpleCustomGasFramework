@@ -1,5 +1,7 @@
 {
     "[xml]": {
-        "editor.formatOnSave": true
-    }
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "xml.format.maxLineWidth": 0
 }

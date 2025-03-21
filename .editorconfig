@@ -1,6 +1,6 @@
 root = true
 
-[*.{xml,*.cs}]
+[*.cs]
 insert_final_newline = false
 trim_trailing_whitespace = true
 end_of_line = lf
