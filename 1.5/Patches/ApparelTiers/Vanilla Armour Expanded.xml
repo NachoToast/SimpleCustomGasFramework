@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!--
+        Name: Vanilla Armour Expanded
+        URL: https://steamcommunity.com/sharedfiles/filedetails/?id=1814988282
+        Last Checked: 22nd March 2025
+        Last Reviewed: 23rd July 2023
+
+        Hazmat suits and heavy armour variants. Similar with Rimatomics, the
+        hazmat suit is counted as 'thick' even though it is cloth based.
+
+    -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Armour Expanded</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SCGF.ApparelTierDef[defName="HeadCoveringThick"]/apparel</xpath>
+                    <value>
+                        <!-- hazmat mask -->
+                        <li>VAE_Headgear_HAZMATMask</li>
+
+                        <!-- siegebreaker helmet (and prestige variant) -->
+                        <li>VAE_Headgear_HeavyMarineHelmet</li>
+                        <li MayRequire="Ludeon.RimWorld.Royalty">VAE_Headgear_RoyalSiegeHelmet</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SCGF.ApparelTierDef[defName="FullBodyCoveringThick"]/apparel</xpath>
+                    <value>
+                        <!-- hazmat suit -->
+                        <li>VAE_Apparel_HAZMATSuit</li>
+
+                        <!-- siegebreaker armour (and prestige variant) -->
+                        <li>VAE_Apparel_HeavyMarineArmor</li>
+                        <li MayRequire="Ludeon.RimWorld.Royalty">VAE_Apparel_RoyalSiegeArmor</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
