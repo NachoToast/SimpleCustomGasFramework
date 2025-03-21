@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Simple Custom Gas Framework</name>
+    <name>Simple Custom Gas Framework</name>
 
-	<packageId>NachoToast.SCGF</packageId>
+    <packageId>NachoToast.SCGF</packageId>
 
-	<author>NachoToast</author>
+    <author>NachoToast</author>
 
-	<modVersion>2.0</modVersion>
+    <modVersion>2.0</modVersion>
 
-	<url>https://github.com/NachoToast/SimpleCustomGasFramework</url>
+    <url>https://github.com/NachoToast/SimpleCustomGasFramework</url>
 
-	<description>A framework for creating custom gas types.</description>
+    <description>A framework for creating custom gas types.</description>
 
-	<supportedVersions>
-		<li>1.4</li>
-		<li>1.5</li>
-	</supportedVersions>
+    <supportedVersions>
+        <li>1.4</li>
+        <li>1.5</li>
+    </supportedVersions>
 
-	<modDependenciesByVersion>
-		<v1.4>
-			<li>
-				<packageId>brrainz.harmony</packageId>
-				<displayName>Harmony</displayName>
-				<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-			</li>
-		</v1.4>
-		<v1.5>
-			<li>
-				<packageId>brrainz.harmony</packageId>
-				<displayName>Harmony</displayName>
-				<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-			</li>
-			<li>
-				<packageId>bs.performance</packageId>
-				<displayName>Performance Fish</displayName>
-				<downloadUrl>https://github.com/bbradson/performance-fish</downloadUrl>
-			</li>
-			<li>
-				<packageId>Ludeon.RimWorld.Biotech</packageId>
-				<displayName>Biotech</displayName>
-				<steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech</steamWorkshopUrl>
-			</li>
-		</v1.5>
-	</modDependenciesByVersion>
+    <modDependenciesByVersion>
+        <v1.4>
+            <li>
+                <packageId>brrainz.harmony</packageId>
+                <displayName>Harmony</displayName>
+                <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+                <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            </li>
+        </v1.4>
+        <v1.5>
+            <li>
+                <packageId>brrainz.harmony</packageId>
+                <displayName>Harmony</displayName>
+                <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+                <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            </li>
+            <li>
+                <packageId>bs.performance</packageId>
+                <displayName>Performance Fish</displayName>
+                <downloadUrl>https://github.com/bbradson/performance-fish</downloadUrl>
+            </li>
+            <li>
+                <packageId>Ludeon.RimWorld.Biotech</packageId>
+                <displayName>Biotech</displayName>
+                <steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech</steamWorkshopUrl>
+            </li>
+        </v1.5>
+    </modDependenciesByVersion>
 
-	<loadAfterByVersion>
-		<v1.4>
-			<li>brrainz.harmony</li>
-			<li>Ludeon.RimWorld</li>
-			<li>Ludeon.RimWorld.Royalty</li>
-			<li>Ludeon.RimWorld.Ideology</li>
-			<li>Ludeon.RimWorld.Biotech</li>
-		</v1.4>
-		<v1.5>
-			<li>brrainz.harmony</li>
-			<li>bs.performance</li>
-			<li>Ludeon.RimWorld</li>
-			<li>Ludeon.RimWorld.Royalty</li>
-			<li>Ludeon.RimWorld.Ideology</li>
-			<li>Ludeon.RimWorld.Biotech</li>
-			<li>Ludeon.RimWorld.Anomaly</li>
-		</v1.5>
-	</loadAfterByVersion>
+    <loadAfterByVersion>
+        <v1.4>
+            <li>brrainz.harmony</li>
+            <li>Ludeon.RimWorld</li>
+            <li>Ludeon.RimWorld.Royalty</li>
+            <li>Ludeon.RimWorld.Ideology</li>
+            <li>Ludeon.RimWorld.Biotech</li>
+        </v1.4>
+        <v1.5>
+            <li>brrainz.harmony</li>
+            <li>bs.performance</li>
+            <li>Ludeon.RimWorld</li>
+            <li>Ludeon.RimWorld.Royalty</li>
+            <li>Ludeon.RimWorld.Ideology</li>
+            <li>Ludeon.RimWorld.Biotech</li>
+            <li>Ludeon.RimWorld.Anomaly</li>
+        </v1.5>
+    </loadAfterByVersion>
 </ModMetaData>
