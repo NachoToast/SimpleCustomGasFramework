@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <SCGF.GasDef Name="GasBase" Abstract="True">
+        <dissipationRate>4</dissipationRate>
+        <diffuses>true</diffuses>
+
+        <appliesTo>
+            <li Class="SCGF.Filters.Organic" />
+        </appliesTo>
+
+        <immunityWhen>
+            <li Class="SCGF.Filters.ApparelTiers">
+                <tierDefs>
+                    <li>MouthCoveringThick</li>
+                </tierDefs>
+            </li>
+        </immunityWhen>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>NachoToastGas</defName>
+        <label>toast gas</label>
+        <color>(1, 0, 1)</color>
+
+        <actions>
+            <li Class="SCGF.Actions.ApplyHediff">
+                <hediffDef>Carcinoma</hediffDef>
+            </li>
+        </actions>
+    </SCGF.GasDef>
+
+</Defs>

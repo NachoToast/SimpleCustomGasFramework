@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- Full Body (Excluding Head) -->
+
+    <SCGF.ApparelTierDef Name="FullBodyCoveringThin">
+        <defName>FullBodyCoveringThin</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Burka</li>
+        </apparel>
+    </SCGF.ApparelTierDef>
+
+    <SCGF.ApparelTierDef Name="FullBodyCoveringThick">
+        <defName>FullBodyCoveringThick</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphract</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPhoenix</li>
+        </apparel>
+    </SCGF.ApparelTierDef>
+
+    <!-- Head -->
+
+    <SCGF.ApparelTierDef Name="HeadCoveringThin">
+        <defName>HeadCoveringThin</defName>
+    </SCGF.ApparelTierDef>
+
+    <SCGF.ApparelTierDef Name="HeadCoveringThick">
+        <defName>HeadCoveringThick</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
+        </apparel>
+    </SCGF.ApparelTierDef>
+
+    <!-- Face -->
+
+    <SCGF.ApparelTierDef Name="FaceCoveringThin" ParentName="HeadCoveringThin">
+        <defName>FaceCoveringThin</defName>
+    </SCGF.ApparelTierDef>
+
+    <SCGF.ApparelTierDef Name="FaceCoveringThick" ParentName="HeadCoveringThick">
+        <defName>FaceCoveringThick</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_GasMask</li>
+        </apparel>
+    </SCGF.ApparelTierDef>
+
+    <!-- Mouth -->
+
+    <SCGF.ApparelTierDef Name="MouthCoveringThin" ParentName="FaceCoveringThin">
+        <defName>MouthCoveringThin</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ClothMask</li>
+            <li>Apparel_WarVeil</li>
+        </apparel>
+    </SCGF.ApparelTierDef>
+
+    <SCGF.ApparelTierDef Name="MouthCoveringThick" ParentName="FaceCoveringThick">
+        <defName>MouthCoveringThick</defName>
+    </SCGF.ApparelTierDef>
+
+</Defs>
