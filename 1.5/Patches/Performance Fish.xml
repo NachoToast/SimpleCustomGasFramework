@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PerformanceFish.GasDef[defName="BlindSmoke"]</xpath>
+        <attribute>Name</attribute>
+        <value>BlindSmoke</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PerformanceFish.GasDef[defName="ToxGas"]</xpath>
+        <attribute>Name</attribute>
+        <value>ToxGas</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PerformanceFish.GasDef[defName="RotStink"]</xpath>
+        <attribute>Name</attribute>
+        <value>RotStink</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/PerformanceFish.GasDef[defName="DeadLifeDust"]</xpath>
+        <attribute>Name</attribute>
+        <value>DeadLifeDust</value>
+    </Operation>
+
+</Patch>
