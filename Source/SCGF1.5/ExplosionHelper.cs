@@ -27,26 +27,7 @@ namespace SCGF
                 return ext != null;
             }
 
-            if (explosion.projectile?.HasModExtension(out CustomGasExtension projExtension) == true)
-            {
-                // Mortar shells, thrown grenades, shells from launchers, etc...
-                ext = projExtension;
-            }
-            else if (explosion.weapon?.HasModExtension(out CustomGasExtension wepExtension) == true)
-            {
-                // Mortars, item form of grenades/launchers, etc...
-                ext = wepExtension;
-            }
-            else if (explosion.instigator?.def?.HasModExtension(out CustomGasExtension insExtension) == true)
-            {
-                // Mortar shells (in item form), IED traps, etc...
-                // This could also be a pawn that fired a launcher or mortar, but that is covered by the projectile check.
-                ext = insExtension;
-            }
-            else
-            {
-                ext = null;
-            }
+            ext = explosion.damType?.GetModExtension<CustomGasExtension>();
 
             lastSeen = new Tuple<Explosion, CustomGasExtension>(explosion, ext);
             return ext != null;

@@ -79,15 +79,5 @@ namespace SCGF
 
             return true;
         }
-
-        /// <summary>
-        /// Returns <see langword="true"/> if the given <paramref name="def"/> has the  <see cref="DefModExtension"/> <typeparamref name="T"/>
-        /// </summary>
-        public static bool HasModExtension<T>(this Def def, out T extension) where T : DefModExtension
-        {
-            extension = def.GetModExtension<T>();
-
-            return (extension != null);
-        }
     }
 }
