@@ -19,16 +19,4 @@
         </immunityWhen>
     </SCGF.GasDef>
 
-    <SCGF.GasDef ParentName="GasBase">
-        <defName>NachoToastGas</defName>
-        <label>toast gas</label>
-        <color>(1, 0, 1)</color>
-
-        <actions>
-            <li Class="SCGF.Actions.ApplyHediff">
-                <hediffDef>Carcinoma</hediffDef>
-            </li>
-        </actions>
-    </SCGF.GasDef>
-
 </Defs>
