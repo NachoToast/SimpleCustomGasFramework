@@ -5,7 +5,7 @@ namespace SCGF
 {
     public class HediffGiver_RandomWithSeverity : HediffGiver
     {
-        private readonly float mtbDays;
+        private readonly float mtbDays = 0f;
 
         private readonly FloatRange severityRange;
 
