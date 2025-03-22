@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B04C6D40-7545-448F-858E-4C98C773CC9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCGF</RootNamespace>
+    <AssemblyName>SCGF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\1.5\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PerformanceFish">
+      <HintPath>..\..\..\Performance-Fish\1.5\Assemblies\PerformanceFish.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionHelpers\BodyPartChooser_None.cs" />
+    <Compile Include="ActionHelpers\GasDensityMultiplier_Complex.cs" />
+    <Compile Include="ActionHelpers\GasDensityMultiplier_Simple.cs" />
+    <Compile Include="ActionHelpers\BodyPartChooser_Random.cs" />
+    <Compile Include="ActionHelpers\BodyPartChooser.cs" />
+    <Compile Include="ActionHelpers\HediffStageMultiplier.cs" />
+    <Compile Include="ActionHelpers\StatFactorMultiplier_Complex.cs" />
+    <Compile Include="ActionHelpers\StatFactorMultiplier_Simple.cs" />
+    <Compile Include="ActionHelpers\StatFactorMultiplier.cs" />
+    <Compile Include="ActionHelpers\GasDensityMultiplier.cs" />
+    <Compile Include="Actions\ApplyHediff.cs" />
+    <Compile Include="ApparelTierDef.cs" />
+    <Compile Include="CustomGasExtension.cs" />
+    <Compile Include="ExplosionHelper.cs" />
+    <Compile Include="Filters\ApparelSets.cs" />
+    <Compile Include="Filters\ApparelTiers.cs" />
+    <Compile Include="Filters\Organic.cs" />
+    <Compile Include="GasDef.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Filters\Genders.cs" />
+    <Compile Include="Filters\Genes.cs" />
+    <Compile Include="Filters\Hediffs.cs" />
+    <Compile Include="Filters\LifeStages.cs" />
+    <Compile Include="Filters\PawnKinds.cs" />
+    <Compile Include="Filters\Traits.cs" />
+    <Compile Include="GasAction.cs" />
+    <Compile Include="GasFilter.cs" />
+    <Compile Include="Filters\Animals.cs" />
+    <Compile Include="Filters\Anomalies.cs" />
+    <Compile Include="Filters\Humanlikes.cs" />
+    <Compile Include="Filters\Insects.cs" />
+    <Compile Include="Filters\Mechanoids.cs" />
+    <Compile Include="ISeverityModifier.cs" />
+    <Compile Include="Patches.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectionLayer_CustomGas.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
