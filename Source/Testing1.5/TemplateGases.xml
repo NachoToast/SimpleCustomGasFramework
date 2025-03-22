@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- 
+        MARK: Colors
+    -->
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Cyan</defName>
+        <label>Cyan</label>
+        <color>(0, 1, 1)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Yellow</defName>
+        <label>Yellow</label>
+        <color>(1, 1, 0)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Magenta</defName>
+        <label>Magenta</label>
+        <color>(1, 0, 1)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Red</defName>
+        <label>Red</label>
+        <color>(1, 0, 0)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Green</defName>
+        <label>Green</label>
+        <color>(0, 1, 0)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Blue</defName>
+        <label>Blue</label>
+        <color>(0, 0, 1)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Black</defName>
+        <label>Black</label>
+        <color>(0, 0, 0)</color>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>White</defName>
+        <label>White</label>
+        <color>(1, 1, 1)</color>
+    </SCGF.GasDef>
+
+    <!-- 
+        MARK: Other
+    -->
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>Skull</defName>
+        <label>Skull</label>
+        <color>(1, 1, 1)</color>
+        <texPath>Things/Item/Skull/Skull_a</texPath>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>SolidColor</defName>
+        <label>SolidColor</label>
+        <color>(1, 1, 1)</color>
+        <shaderPath>Map/SolidColor</shaderPath>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="GasBase">
+        <defName>SolidAlpha</defName>
+        <label>SolidAlpha</label>
+        <color>(1, 1, 1, 0.1)</color>
+        <shaderPath>Map/SolidColor</shaderPath>
+    </SCGF.GasDef>
+
+</Defs>

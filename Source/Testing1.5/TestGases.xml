@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <SCGF.GasDef Name="TestGasBase" Abstract="True">
+        <dissipationRate>4</dissipationRate>
+        <diffuses>true</diffuses>
+        <color>(1, 1, 1)</color>
+
+        <immunityWhen>
+            <li Class="SCGF.Filters.Animals" />
+            <li Class="SCGF.Filters.Anomalies" />
+            <li Class="SCGF.Filters.ApparelSets">
+                <sets>
+                    <li>
+                        <li>Apparel_ShieldBelt</li>
+                        <li>Apparel_SmokepopBelt</li>
+                    </li>
+                </sets>
+            </li>
+            <li Class="SCGF.Filters.ApparelTiers">
+                <tierDefs>
+                    <li>FullBodyCoveringThick</li>
+                    <li>MouthCoveringThick</li>
+                </tierDefs>
+            </li>
+            <li Class="SCGF.Filters.Genders">
+                <genders>
+                    <li>None</li>
+                </genders>
+            </li>
+            <li Class="SCGF.Filters.Genes">
+                <genes>
+                    <li>KindInstinct</li>
+                </genes>
+            </li>
+            <li Class="SCGF.Filters.Hediffs">
+                <hediffs>
+                    <li>DEV_Unburnable</li>
+                </hediffs>
+            </li>
+            <li Class="SCGF.Filters.Humanlikes" />
+            <li Class="SCGF.Filters.Insects" />
+            <li Class="SCGF.Filters.LifeStages">
+                <lifeStages>
+                    <li>EusocialInsectLarva</li>
+                </lifeStages>
+            </li>
+            <li Class="SCGF.Filters.Mechanoids" />
+            <li Class="SCGF.Filters.Organic" />
+            <li Class="SCGF.Filters.PawnKinds">
+                <pawnKinds>
+                    <li>Drifter</li>
+                </pawnKinds>
+            </li>
+            <li Class="SCGF.Filters.Traits" />
+        </immunityWhen>
+
+        <actions>
+            <li Class="SCGF.Actions.ApplyHediff">
+                <hediffDef>Carcinoma</hediffDef>
+            </li>
+        </actions>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas1</defName>
+        <label>test gas 1</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas2</defName>
+        <label>test gas 2</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas3</defName>
+        <label>test gas 3</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas4</defName>
+        <label>test gas 4</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas5</defName>
+        <label>test gas 5</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas6</defName>
+        <label>test gas 6</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas7</defName>
+        <label>test gas 7</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas8</defName>
+        <label>test gas 8</label>
+    </SCGF.GasDef>
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas9</defName>
+        <label>test gas 9</label>
+    </SCGF.GasDef>
+
+
+    <SCGF.GasDef ParentName="TestGasBase">
+        <defName>TestGas10</defName>
+        <label>test gas 10</label>
+    </SCGF.GasDef>
+
+</Defs>
