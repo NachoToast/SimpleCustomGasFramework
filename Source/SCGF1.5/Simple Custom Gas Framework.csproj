@@ -73,6 +73,7 @@
     <Compile Include="ActionHelpers\StatFactorMultiplier.cs" />
     <Compile Include="ActionHelpers\GasDensityMultiplier.cs" />
     <Compile Include="Actions\ApplyHediff.cs" />
+    <Compile Include="Actions\DoToxicDamage.cs" />
     <Compile Include="ApparelTierDef.cs" />
     <Compile Include="CustomGasExtension.cs" />
     <Compile Include="ExplosionHelper.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Filters\Humanlikes.cs" />
     <Compile Include="Filters\Insects.cs" />
     <Compile Include="Filters\Mechanoids.cs" />
+    <Compile Include="HediffGiver_RandomWithSeverity.cs" />
     <Compile Include="ISeverityModifier.cs" />
     <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
