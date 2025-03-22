@@ -14,6 +14,7 @@
     <SCGF.ApparelTierDef Name="FullBodyCoveringThick">
         <defName>FullBodyCoveringThick</defName>
         <apparel>
+            <li>Apparel_PowerArmor</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphract</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPhoenix</li>
@@ -29,6 +30,7 @@
     <SCGF.ApparelTierDef Name="HeadCoveringThick">
         <defName>HeadCoveringThick</defName>
         <apparel>
+            <li>Apparel_PowerArmorHelmet</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
         </apparel>
