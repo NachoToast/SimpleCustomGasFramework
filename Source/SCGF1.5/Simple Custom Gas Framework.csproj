@@ -74,11 +74,11 @@
     <Compile Include="ActionHelpers\GasDensityMultiplier.cs" />
     <Compile Include="Actions\ApplyHediff.cs" />
     <Compile Include="Actions\DoToxicDamage.cs" />
-    <Compile Include="ApparelTierDef.cs" />
+    <Compile Include="ProtectiveApparelDef.cs" />
     <Compile Include="CustomGasExtension.cs" />
     <Compile Include="ExplosionHelper.cs" />
     <Compile Include="Filters\ApparelSets.cs" />
-    <Compile Include="Filters\ApparelTiers.cs" />
+    <Compile Include="Filters\ProtectiveApparel.cs" />
     <Compile Include="Filters\Organic.cs" />
     <Compile Include="GasDef.cs" />
     <Compile Include="Extensions.cs" />

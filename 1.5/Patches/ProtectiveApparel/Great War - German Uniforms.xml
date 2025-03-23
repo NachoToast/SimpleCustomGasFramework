@@ -5,7 +5,7 @@
     <!-- 
         Name: [1.5] Great War - German Uniforms
         URL: https://steamcommunity.com/sharedfiles/filedetails/?id=2581651314
-        Last Checked: 22nd March 2025
+        Last Checked: 23rd March 2025
         Last Reviewed: 23rd July 2023
 
         Mainly just gas masks and helmet variants, values are grouped by variant.
@@ -17,7 +17,7 @@
         </mods>
 
         <match Class="PatchOperationAdd">
-            <xpath>Defs/SCGF.ApparelTierDef[defName="FaceCoveringThick"]/apparel</xpath>
+            <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Face"]/apparel</xpath>
             <value>
                 <!-- M1916 Stahlhelm -->
                 <li>ODZ_WWI_M1916StahlhelmGasmask</li>

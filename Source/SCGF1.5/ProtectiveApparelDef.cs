@@ -6,7 +6,7 @@ namespace SCGF
     /// <summary>
     /// List of apparel <see cref="ThingDef"/>s that signify a certain level of immunity to gas.
     /// </summary>
-    public class ApparelTierDef : Def
+    public class ProtectiveApparelDef : Def
     {
         private readonly List<ThingDef> apparel = new List<ThingDef>();
 

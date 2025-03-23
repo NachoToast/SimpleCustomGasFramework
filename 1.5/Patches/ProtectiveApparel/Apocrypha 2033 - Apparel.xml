@@ -5,11 +5,10 @@
     <!-- 
         Name: Apocrypha 2033 - Apparel
         URL: https://steamcommunity.com/sharedfiles/filedetails/?id=2970206222
-        Last Checked: 22nd March 2025
+        Last Checked: 23rd March 2025
         Last Reviewed: 23rd July 2023
 
-        2 Balaclavas, 5 Gasmasks, and a helmet.
-        The balaclavas have eye holes, so they don't count as full face or head coverings.
+        5 Gasmasks and a helmet.
     -->
 
     <Operation Class="PatchOperationFindMod">
@@ -21,15 +20,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="MouthCoveringThin"]/apparel</xpath>
-                    <value>
-                        <li>ODZ_METRO2033_1holebalcalva</li>
-                        <li>ODZ_METRO2033_2holebalcalva</li>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="FaceCoveringThick"]/apparel</xpath>
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Face"]/apparel</xpath>
                     <value>
                         <li>ODZ_METRO2033_GP5Gasmask</li>
                         <li>ODZ_METRO2033_PBFGasmask</li>
@@ -40,7 +31,7 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="HeadCoveringThick"]/apparel</xpath>
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Head"]/apparel</xpath>
                     <value>
                         <li>ODZ_METRO2033_ApocalypseHelmet</li>
                     </value>

@@ -18,11 +18,11 @@
                     </li>
                 </sets>
             </li>
-            <li Class="SCGF.Filters.ApparelTiers">
-                <tierDefs>
-                    <li>FullBodyCoveringThick</li>
-                    <li>MouthCoveringThick</li>
-                </tierDefs>
+            <li Class="SCGF.Filters.ProtectiveApparel">
+                <types>
+                    <li>Body</li>
+                    <li>Mouth</li>
+                </types>
             </li>
             <li Class="SCGF.Filters.Genders">
                 <genders>

@@ -5,12 +5,10 @@
     <!--
         Name: Dubs Rimatomics
         URL: https://steamcommunity.com/sharedfiles/filedetails/?id=1127530465
-        Last Checked: 22nd March 2025
+        Last Checked: 23rd March 2025
         Last Reviewed: 22nd March 2025
 
         Radiation and MOPP suits.
-        Although the suits are cloth based, they are counted as 'thick' since
-        they are designed specifically to counter contamination.
     -->
 
     <Operation Class="PatchOperationFindMod">
@@ -21,7 +19,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="HeadCoveringThick"]/apparel</xpath>
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Head"]/apparel</xpath>
                     <value>
                         <li>Apparel_RadiationMask</li>
                         <li>Apparel_MoppMaskDesert</li>
@@ -31,7 +29,7 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="FullBodyCoveringThick"]/apparel</xpath>
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Body"]/apparel</xpath>
                     <value>
                         <li>Apparel_RadiationSuit</li>
                         <li>Apparel_MoppSuitDesert</li>

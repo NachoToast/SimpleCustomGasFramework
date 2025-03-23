@@ -8,9 +8,7 @@
         Last Checked: 22nd March 2025
         Last Reviewed: 23rd July 2023
 
-        Hazmat suits and heavy armour variants. Similar with Rimatomics, the
-        hazmat suit is counted as 'thick' even though it is cloth based.
-
+        Hazmat suits and heavy armour variants.
     -->
 
     <Operation Class="PatchOperationFindMod">
@@ -21,7 +19,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="HeadCoveringThick"]/apparel</xpath>
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Head"]/apparel</xpath>
                     <value>
                         <!-- hazmat mask -->
                         <li>VAE_Headgear_HAZMATMask</li>
@@ -33,7 +31,7 @@
                 </li>
 
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/SCGF.ApparelTierDef[defName="FullBodyCoveringThick"]/apparel</xpath>
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Body"]/apparel</xpath>
                     <value>
                         <!-- hazmat suit -->
                         <li>VAE_Apparel_HAZMATSuit</li>

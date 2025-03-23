@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <SCGF.ProtectiveApparelDef Name="ProtectiveApparel_Body">
+        <defName>Body</defName>
+        <apparel>
+            <li>Apparel_PowerArmor</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphract</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPhoenix</li>
+        </apparel>
+    </SCGF.ProtectiveApparelDef>
+
+    <SCGF.ProtectiveApparelDef Name="ProtectiveApparel_Head">
+        <defName>Head</defName>
+        <apparel>
+            <li>Apparel_PowerArmorHelmet</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
+        </apparel>
+    </SCGF.ProtectiveApparelDef>
+
+    <SCGF.ProtectiveApparelDef Name="ProtectiveApparel_Face" ParentName="ProtectiveApparel_Head">
+        <defName>Face</defName>
+        <apparel>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_GasMask</li>
+        </apparel>
+    </SCGF.ProtectiveApparelDef>
+
+    <SCGF.ProtectiveApparelDef Name="ProtectiveApparel_Mouth" ParentName="ProtectiveApparel_Face">
+        <defName>Mouth</defName>
+    </SCGF.ProtectiveApparelDef>
+
+</Defs>

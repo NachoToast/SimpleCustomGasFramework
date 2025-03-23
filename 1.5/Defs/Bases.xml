@@ -11,10 +11,10 @@
         </appliesTo>
 
         <immunityWhen>
-            <li Class="SCGF.Filters.ApparelTiers">
-                <tierDefs>
-                    <li>MouthCoveringThick</li>
-                </tierDefs>
+            <li Class="SCGF.Filters.ProtectiveApparel">
+                <types>
+                    <li>Mouth</li>
+                </types>
             </li>
         </immunityWhen>
     </SCGF.GasDef>

@@ -6,14 +6,14 @@ using Verse;
 namespace SCGF.Filters
 {
     /// <summary>
-    /// Filter to only <see cref="Pawn"/>s wearing at least one item in each of the given <see cref="ApparelTierDef"/>s.
+    /// Filter to only <see cref="Pawn"/>s wearing at least one item in each of the given <see cref="ProtectiveApparelDef"/>s.
     /// </summary>
-    public class ApparelTiers : GasFilter
+    public class ProtectiveApparel : GasFilter
     {
-        private readonly List<ApparelTierDef> tierDefs = new List<ApparelTierDef>();
+        private readonly List<ProtectiveApparelDef> types = new List<ProtectiveApparelDef>();
 
         [Unsaved]
-        private HashSet<ApparelTierDef> tierDefsSet;
+        private HashSet<ProtectiveApparelDef> typesSet;
 
         public override bool ShouldApplyTo(Pawn pawn, byte gasDensity)
         {
@@ -24,22 +24,22 @@ namespace SCGF.Filters
                 return false;
             }
 
-            HashSet<ApparelTierDef> remainingTiers = new HashSet<ApparelTierDef>(tierDefsSet);
+            HashSet<ProtectiveApparelDef> remainingTypes = new HashSet<ProtectiveApparelDef>(typesSet);
 
             foreach (Apparel apparel in wornApparel)
             {
-                bool removedAnyTiers = false;
+                bool removedAnyTypes = false;
 
-                foreach (ApparelTierDef tier in remainingTiers.ToList())
+                foreach (ProtectiveApparelDef type in remainingTypes.ToList())
                 {
-                    if (tier.apparelSet.Contains(apparel.def))
+                    if (type.apparelSet.Contains(apparel.def))
                     {
-                        remainingTiers.Remove(tier);
-                        removedAnyTiers = true;
+                        remainingTypes.Remove(type);
+                        removedAnyTypes = true;
                     }
                 }
 
-                if (removedAnyTiers && remainingTiers.Count == 0)
+                if (removedAnyTypes && remainingTypes.Count == 0)
                 {
                     return true;
                 }
@@ -52,7 +52,7 @@ namespace SCGF.Filters
         {
             base.ResolveReferences();
 
-            tierDefsSet = new HashSet<ApparelTierDef>(tierDefs);
+            typesSet = new HashSet<ProtectiveApparelDef>(types);
         }
 
         public override IEnumerable<string> ConfigErrors()
@@ -62,9 +62,9 @@ namespace SCGF.Filters
                 yield return error;
             }
 
-            if (tierDefs.Count == 0)
+            if (types.Count == 0)
             {
-                yield return $"please specify at least one {nameof(ApparelTierDef)}";
+                yield return $"please specify at least one {nameof(ProtectiveApparelDef)}";
             }
         }
     }
