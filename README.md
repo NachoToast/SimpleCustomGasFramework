@@ -14,10 +14,12 @@ See also:
 - [Tear gas](https://github.com/NachoToast/RimWorldTearGas)
 - [Gas vents](https://github.com/NachoToast/RimWorldGasVents)
 
-![image](Source/Media/Combat.gif)
+![image](Source/Media/1.5/Combat.gif)
 
-![image](Source/Media/Expand.gif)
+![image](Source/Media/1.5/Raid.gif)
 
-![image](Source/Media/Raid.gif)
+![image](Source/Media/1.5/Showcase.gif)
 
-![image](Source/Media/Showcase.gif)
+![image](Source/Media/1.5/Colours.gif)
+
+![image](Source/Media/1.5/Custom.gif)
