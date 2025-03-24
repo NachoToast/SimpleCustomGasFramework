@@ -3,7 +3,7 @@
 <Defs>
 
     <SCGF.GasDef Name="GasBase" Abstract="True">
-        <dissipationRate>4</dissipationRate>
+        <dissipationRate>3</dissipationRate>
         <diffuses>true</diffuses>
 
         <!-- Apply to organic pawns only. -->
