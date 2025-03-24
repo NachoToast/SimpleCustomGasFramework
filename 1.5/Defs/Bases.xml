@@ -6,10 +6,12 @@
         <dissipationRate>4</dissipationRate>
         <diffuses>true</diffuses>
 
+        <!-- Apply to organic pawns only. -->
         <appliesTo>
             <li Class="SCGF.Filters.Organic" />
         </appliesTo>
 
+        <!-- Consider pawns immune if they are wearing protective apparel that covers at least the mouth. -->
         <immunityWhen>
             <li Class="SCGF.Filters.ProtectiveApparel">
                 <types>
