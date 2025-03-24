@@ -42,6 +42,16 @@ namespace SCGF.Filters
             {
                 yield return "must have at least one set of apparel defined";
             }
+            else
+            {
+                for (int i = 0; i < sets.Count; i++)
+                {
+                    if (sets[i].Count == 0)
+                    {
+                        yield return $"{nameof(sets)}[{i}]: cannot be empty";
+                    }
+                }
+            }
         }
     }
 }
