@@ -37,7 +37,7 @@ namespace SCGF
 
         public virtual void DoEffects(Pawn pawn, byte gasDensity)
         {
-            if (!appliesTo.AnyFiltersPass(pawn, gasDensity))
+            if (!appliesTo.AllFiltersPass(pawn, gasDensity))
             {
                 return;
             }
