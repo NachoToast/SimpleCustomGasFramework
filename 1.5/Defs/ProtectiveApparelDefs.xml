@@ -9,6 +9,7 @@
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphract</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPhoenix</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_MechlordSuit</li>
         </apparel>
     </SCGF.ProtectiveApparelDef>
 
@@ -18,6 +19,7 @@
             <li>Apparel_PowerArmorHelmet</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArmorHelmetMechlordHelmet</li>
         </apparel>
     </SCGF.ProtectiveApparelDef>
 
