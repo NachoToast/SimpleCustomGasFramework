@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Analyzer>
+    <SCGF>
+        <Tooltip>Some helpful/relevant methods to look at for the Simple Custom Gas Framework.</Tooltip>
+
+        <Methods>
+            <li>Verse.GasGrid:Tick</li>
+            <li>Verse.GasUtility:PawnGasEffectsTick</li>
+            <li>Verse.Map:MapPostTick</li>
+            <li>Verse.Map:MapPreTick</li>
+            <li>Verse.GasGrid:AddGas</li>
+            <li>Verse.SectionLayer_Gas:Regenerate</li>
+            <li>SCGF.SectionLayer_CustomGas:Regenerate</li>
+            <li>Verse.MouseoverReadout:DrawGas</li>
+        </Methods>
+    </SCGF>
+</Analyzer>
