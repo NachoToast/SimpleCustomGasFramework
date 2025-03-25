@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!--
+        Name: GrimWorld 40,000 - Hammer of the Imperium
+        URL: https://steamcommunity.com/sharedfiles/filedetails/?id=3015391450
+        Last Checked: 25th March 2025
+        Last Reviewed: 25th March 2025
+
+        TODO
+    -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>GrimWorld 40,000 - Hammer of the Imperium</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Head"]/apparel</xpath>
+                    <value>
+                        <li>GW_AM_LuciferBlackSkull</li>
+                        <li>GW_AM_LuciferBlackAlt</li>
+                        <li>GW_AM_Elysian_Helmet</li>
+                        <li>GW_AM_VostoyanFirstbornHeadgear</li>
+                        <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Face"]/apparel</xpath>
+                    <value>
+                        <li>GW_AM_EngineseererMask</li>
+                        <li>GW_AM_SL_GasMask</li>
+                        <li>ODZ_40k_IG_DKOK_Gasmask</li>
+                        <li>ODZ_40k_IG_DKOK_GrenadierGasmask</li>
+                        <li>ODZ_40k_IM_TempestusScion_Mask</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Mouth"]/apparel</xpath>
+                    <value>
+                        <li>GW_AM_LuciferBlackMask</li>
+                        <li>GW_AM_ElysianHelmetOpen</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SCGF.ProtectiveApparelDef[defName="Body"]/apparel</xpath>
+                    <value>
+                        <li>GW_AM_Engineseerer</li>
+                        <li>GW_AM_Elysian_Jetpack</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
