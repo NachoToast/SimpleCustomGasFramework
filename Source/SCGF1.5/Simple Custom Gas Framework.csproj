@@ -73,6 +73,7 @@
     <Compile Include="ActionHelpers\StatFactorMultiplier.cs" />
     <Compile Include="ActionHelpers\GasDensityMultiplier.cs" />
     <Compile Include="Actions\ApplyHediff.cs" />
+    <Compile Include="Actions\TakeDamage.cs" />
     <Compile Include="Actions\DoToxicDamage.cs" />
     <Compile Include="ProtectiveApparelDef.cs" />
     <Compile Include="CustomGasExtension.cs" />
